@@ -1,0 +1,614 @@
+
+@import url("padroes.less");
+
+
+html{height:100%;}
+
+body{	
+    height:100%;
+    color: #333;            
+    background-color: @cinza1;
+    font-family: @opensans;
+}
+
+a{
+  outline: 0 !important;
+  color: @corpadrao;
+}
+a.botao{  
+    background: @cinza2;        
+    border: none;    
+    float: right;  
+    text-align: center;    
+    border: 1px solid @corsecundaria;
+    color: @corsecundaria;
+     -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+             border-radius: 3px;
+    
+    margin: 5px 0 0 5px;
+    padding: 2px 6px;
+    font-size: .85em;
+    
+}
+  a.botao:hover{
+      background: @corpadrao;
+      color: #fff;
+  }
+
+/* titulos paginas */
+#principal h1,
+#page-title{
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: -1px;
+    margin: 0;     
+    background: transparent;
+    font-family: @helvetica;        
+}
+
+#principal h2{
+  font-size: 3em;	        
+  text-align: right;
+  margin-bottom: 50px;
+  font-family:  @helvetica;
+}
+#principal h3{	
+	font-size: 2.2em;		
+	margin-bottom: 40px;	
+  font-family:  @helvetica;    
+}
+#principal h4{	
+	font-size: 1.2em;			  
+  margin-bottom: 20px;  
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family:  @helvetica;    
+}
+.titulo-pagina{		
+	float: left;
+	width: 100%;		
+	padding: 30px 0 35px 0;		
+}
+.titulo-pagina h1{
+	font-size: 4em;
+	color: #666;
+}
+
+
+
+/* formularios */
+form label{
+    width: 100%;
+    padding: 7px 0;	
+    font-weight: normal;
+    margin-top: 10px;
+    display: block !important;
+    border: 1px solid red;
+}
+form input[type="text"],
+form textarea,
+form select,
+form .form-email,
+form input[type="password"]{
+	width: 100%;
+	padding: 7px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #d1d1d1;	
+	margin-bottom: 5px;
+}
+form input[type="submit"]{		
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	padding: 12px; 
+	float: left;	
+	width: 100%;	
+	text-transform: uppercase;
+  background: @corpadrao;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+form input[type="submit"]:hover{background: @corsecundaria;}
+
+
+.img-responsive{margin: auto; clear: left;}
+
+#wrapper {
+    padding-left: 0;
+    .transition;    
+}
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 0;        
+}
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -150px;
+}
+#wrapper {padding-left: 30%;}
+
+#wrapper.toggled {padding-left: 45px;}
+
+#page-content-wrapper{ position: relative;}
+
+#wrapper.toggled #page-content-wrapper {
+  position: relative;
+  margin-right: 0;
+}
+
+
+/*--- AUDIO -----------------------------------------------------------------------*/
+
+.audio{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 500;
+}
+.view-audio-1 .views-field-title{
+    color: #fff;
+    position: absolute;
+    z-index: 50;
+    top: -3px;
+    left: 15px;
+}
+
+#audiojs_wrapper0{ 
+    width: 100% !important; 
+    
+    .play-pause{
+        border-right: 1px solid #000;
+        float: left;
+        width: 5%;
+    }
+    
+    .scrubber{
+        width: 80% !important;         
+        padding: 0 !important;
+        margin: 10px 0 0 0 !important;
+        
+        .progress{background: #666;}
+    }
+    .time{
+        float: right;                 
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 15%;
+        text-align: center;
+    }
+}
+
+/*--- HEADER ----------------------------------------------------------------------*/
+header{
+    width: 100%;          
+    padding: 0 5% 0 0;
+    float: left;
+    position: relative;        
+    overflow: hidden; 
+    
+    .container{
+      width: 100%;  
+      padding: 50px 0;  
+    }
+
+}
+
+
+/*--- MENU -----------------------------------------------------------------------------------------------*/
+#topnav{	
+	width: 100%;	
+    border: none !important;
+	border-radius: 0;		
+	background: transparent;
+	margin: 0;
+	padding: 0;		
+    box-shadow: none;
+	border-bottom: 1px solid @cinza3;    
+    
+    .navbar-collapse{        
+        padding: 0;
+        background: trnasparent;
+    }
+    
+    .navbar.navbar-default{
+        border: none; 
+        box-shadow: none;
+        background: transparent;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    #menu-principal{		
+        width: 100%;        
+        text-align: right;	
+        margin: 0;
+        padding: 0;
+        background: @cinza1;        
+        
+        ul{
+            
+            border-bottom: 1px solid #ccc;
+        }
+        li{	
+            display: inline-block;
+            float: none;
+        }
+        li:hover{background: transparent;}
+        li a{
+            text-transform: uppercase;
+            padding: 10px 30px;
+            border-radius: 0;
+            color: #000;
+            background: @cinza1;
+            border-bottom: 3px solid @cinza1;
+        }
+       li.active a{            
+            background: @cinza2;
+            box-shadow: none;
+            border-bottom: 3px solid #000;
+        }
+        a:hover,
+        li.active a:hover{   
+            background: @cinza2;
+            border-bottom: 3px solid #000;            
+        }
+    }
+    #menu-principal.fixed-top{
+        position: fixed;
+        top: 0 !important;
+        right: 3.5%;
+        z-index: 50;    
+    }
+
+
+  
+
+
+}
+
+
+/*
+#topnav{	
+	border: none;		
+	border-radius: 0;
+	background: #000;
+	border-bottom: 5px solid #d2b55b;
+}
+#menu-secoes{		
+	text-align: center;	
+	float: none;
+	border-top: none;	
+    z-index: 1;		
+	border-radius: 0;	
+}
+#menu-secoes li{	
+	display: inline-block;
+	float: none;
+}
+#menu-secoes a{
+	color: #fff;
+	text-transform: uppercase;	
+}
+#menu-secoes li.active a{background: #212121;}
+#menu-secoes a:hover,
+#menu-secoes li.active a:hover{background: #d2b55b;}
+*/
+
+
+
+
+/*--- PRINCIPAL --------------------------------------------------------------------------*/
+#page-content-wrapper{ 
+  padding: 0;  
+  background-size: cover;
+}
+#principal section{
+    width: 100%;          
+    padding: 100px 5%;
+    float: left;
+    position: relative;        
+    overflow: hidden;        
+}
+#page-content-wrapper .container-fluid{padding: 0; }
+
+#conteudo{ padding: 0;}
+
+
+/*--- VIDEOS --------------------------------------------------------------------------------------*/
+.view-video-home{
+    .views-row{margin-bottom: 25px;}    
+}
+
+/*--- AGENDA -------------------------------------------------------------------------------------*/
+.view-agenda{
+    
+    .views-row{
+        background: @cinza1;
+        border-bottom: 1px solid @cinza2;
+        margin-bottom: 5px;  
+        float: left;
+        width: 100%;        
+        position: relative;
+        z-index: auto;
+        .transition;
+        
+        h3{
+            margin-bottom: 10px !important;
+        }       
+        .descricao{
+            background: #f5f5f5;            
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            float: left;
+            width: 100%;            
+            .transition;
+        }
+    }
+    
+    .views-row:hover{
+        background: @cinza3;
+        cursor: pointer;
+    }
+        
+    .data{
+        background: #666;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        
+        .dia{
+            font-size: 5em;
+            font-weight: 600;
+            line-height: 1em;
+        }
+        .mes{font-size: 1.5em;}
+    }   
+    
+}
+
+.views-row.aberto .descricao{
+    height: auto;    
+    opacity: 1; 
+    padding: 10px;
+    border: 1px solid @cinza3;
+    -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+                 transition: all .5s;
+}
+
+
+/*--- FOTOS --------------------------------------------------------------------------------------*/
+.view-fotos-home{
+    .views-row{margin-bottom: 25px;}
+}
+
+
+/*--- BLOG GERAL --------------------------------------------------------------------------------*/
+/*.page-blog .view-blog .titulo-post{  
+  font-size: 3em;
+  line-height: 1em;
+  font-family: @helvetica;  
+}
+
+.page-blog .views-row{margin: 25px 0;}
+
+.page-blog .view-blog .titulo-post a{ color: #000;}
+
+.page-blog .data-post{margin: 25px 0;}*/
+
+
+/*--- PORTFOLIO ---------------------------------------------------------------------------------*/
+
+/*#portfolio{
+  width: 100%;    
+  padding: 25px;
+}
+  body.portfolio #portfolio{margin-top: 100px;}
+
+#portfolio .coluna{   
+  padding: 0;
+}
+#portfolio .views-row{  
+  position: relative;
+}
+#portfolio .views-row .info-portfolio a{
+  position: absolute;
+  top: 0; 
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  background: #000; 
+  color: #fff;
+  text-align: center;
+  padding: 10%;
+  margin:0 auto; 
+  height:auto !important;
+  height:100%; 
+  min-height:100%;  
+  display: block;
+  transition: .5s;    
+} 
+
+#portfolio .views-row .info-portfolio .titulo{
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1em;
+  
+  letter-spacing: -1px;
+  display: inline-block;     
+  font-family: @helvetica;
+}
+#portfolio .views-row .info-portfolio .titulo::after{
+  content:'';
+    width: 70px;
+    height: 7px;    
+    background: @corpadrao;
+    display: block;
+    margin: 7px auto;
+}
+#portfolio .views-row .info-portfolio .vejamais{
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+#portfolio .views-row:hover .info-portfolio a{opacity: .85;}
+#portfolio .views-row:hover img{opacity: .5;}
+
+*/
+
+/*--- PORTFOLIO INDIVIDUAL --------------------------------------------------------------------------*/
+/*.portfolio #conteudo .descricao{
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  text-align: justify;  
+}
+*/
+/*--- POST INDIVIDUAL -------------------------------------------------------------------*/
+
+/*.post-blog #principal{padding: 5%;}
+
+.post-blog #principal p{max-width: 750px; margin: 20px auto;}
+
+.post-blog .view-detalhes-noticias{
+  text-align: center;
+  max-width: 750px;   
+  margin: auto;
+}
+.post-blog .view-detalhes-noticias .views-row{width: 100%;}
+
+.post-blog .view-detalhes-noticias .views-field-field-chamada{
+  font-size: 1.4em;
+  color: #777;
+  font-style: italic;
+  margin: 40px 0 50px 0;
+}
+*/
+
+
+
+/*--- CONTATO -------------------------------------------------------------------------*/
+
+#contact a{color: #fff;}
+
+#contact #webform-client-form-4{
+  float: left;
+  width: 100%;
+  color: #000;
+}
+#contact .container{max-width: 80%;}
+#contact #webform-component-nome{
+  width: 48%;
+  float: left;
+}
+#contact #webform-component-email{
+  width: 48%;
+  float: right;
+}
+#contact #webform-component-mensagem{
+  float: left;
+  width: 100%;
+}
+
+#webform-ajax-wrapper-4 .links a.ajax-processed{display: none;}
+
+/*--- RODAPE / FOOTER --------------------------------------------------------------*/
+section#footer{
+    padding: 5px 5%;    
+    
+    a{font-weight: bold;}
+    
+    p{
+        width: 100%;
+        padding: 5px 0;
+        font-size: .85em;
+        display: inline-block;
+        border-top: 1px solid @cinza3;
+        text-align: right;
+    }
+}
+
+
+/*--- LOGIN -------------------------------------------------------------------------*/
+
+body.page-user .container-fluid{
+  max-width: 700px;
+}
+
+body.page-user .tabs,
+body.page-user #experiencia,
+body.page-user #contato,
+body.page-user #footer{display: none;}
+
+
+
+/****************************************************************************************/
+
+@media (max-width: 460px){
+  #wrapper.toggled {padding-left: 0;}
+  #menu-toggle{    
+    top: 5px !important;
+    left: 5px !important;       
+    background: @corpadrao !important;   
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    opacity: .85;
+  }
+}
+
+@media (max-width: 767px) { 
+  /*#footer,
+  .front .scroll{display: none;}  
+  #sidebar-wrapper {padding-top: 50px !important;}
+  #contato,
+  #experiencia{padding: 10px;}
+  #contato .container{max-width: 100%;}
+  #contato #webform-component-nome,
+  #contato #webform-component-email{width: 100%;}
+  #portfolio .views-row .info-portfolio .titulo{font-size: 1.5em; margin-top: 20px !important;}
+  .page-node #conteudo{padding: 0 15px;}*/
+    
+    #wrapper {padding-left: 0;}
+    header{
+        .container{padding: 0;}
+    }
+    #menu-principal{
+        li{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+  .front .scroll{display: block;}
+}
+
+
+/********************************************************************************************/
+
+.fancybox-nav {
+    width: 60px;       
+}
+
+.fancybox-nav span {
+    visibility: visible;
+}
+
+.fancybox-next {
+    right: -60px;
+}
+
+.fancybox-prev {
+    left: -60px;
+}
+/**********************************************************************************************/
+
+

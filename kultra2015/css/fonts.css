@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Helv';
+    src: url('../fonts/HelveticaNeueLTCom-Bd.eot');
+    src: url('../fonts/HelveticaNeueLTCom-Bd.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueLTCom-Bd.woff') format('woff'),
+         url('../fonts/HelveticaNeueLTCom-Bd.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueLTCom-Bd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'), url(http://fonts.gstatic.com/s/ptserif/v8/b31S45a_TNgaBApZhTgE6Pk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ptserif/v8/b31S45a_TNgaBApZhTgE6BsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url(http://fonts.gstatic.com/s/ptserif/v8/Foydq9xJp--nfYIx2TBz9a9pE_tb3z3xWksRrNuit-E.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ptserif/v8/Foydq9xJp--nfYIx2TBz9UnwhEOjQ2CQgMjdTKA0dzI.woff) format('woff');
+}

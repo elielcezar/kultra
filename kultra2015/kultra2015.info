@@ -1,0 +1,28 @@
+name = kultra
+description = Tema exclusivo para Eliel Cezar
+package = Core
+core = 7.x
+
+regions[header] = Header
+regions[sidebar] = Sidebar
+regions[menu] = Menu
+regions[content] = Content
+regions[footer] = Footer
+
+base theme = seven
+
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/bootstrap-theme.min.css
+stylesheets[all][] = css/fonts.css
+stylesheets[all][] = css/animate.css
+stylesheets[all][] = css/geral.css
+stylesheets[all][] = css/sidebar.css
+stylesheets[all][] = css/admin.css
+
+
+plugins[panels][layouts] = layouts
+
+project = "drupal"
+datestamp = "1328134560"
+
+

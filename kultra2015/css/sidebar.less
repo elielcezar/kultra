@@ -1,0 +1,92 @@
+
+@import url("padroes.less");
+
+
+.transition{
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {
+    width: 30%;
+    z-index: 100;
+    position: fixed;
+    left: 250px;    
+    height: 100%;
+    margin-left: -250px;
+    overflow-x: hidden;    
+    padding-top: 50px;    
+    background: #fff url("../img/sidebar.jpg") bottom center no-repeat;
+    background-size: 100%;
+    .transition;    
+}
+
+#sidebar{
+    
+    img.logo{
+        .transition;
+        opacity: .9;
+        margin: 40px auto;
+        max-width: 70%;
+    }
+    ul.redes-sociais{
+        width: 100%;
+        list-style-type: none;        
+        margin: 0;
+        padding: 0;
+        text-align: center;        
+        li{
+            min-width: 10px;
+            min-height: 10px;
+            display: inline-block;
+            padding: 5px;
+            opacity: .75;
+            
+            a{
+                width: 35px;
+                height: 35px;
+                display: block;
+                text-indent: -5000em;                
+                background-size: cover;
+                border-radius: 500px;                
+            } 
+            a:hover{background-color: @cinza2;}
+        }
+        li:hover{opacity: 1;}
+        
+        li.facebook a{background-image: url("../img/facebook_icon.svg"); }
+        li.youtube a{background-image: url("../img/youtube_icon.svg"); }
+        li.soundcloud a{background-image: url("../img/soundcloud_icon.svg"); }
+        li.twitter a{background-image: url("../img/twitter_icon.svg"); }
+    }
+        
+    
+}
+
+
+
+/******************************************************************************************/
+
+@media (max-width: 460px){
+    #wrapper.toggled #sidebar-wrapper {width: 0;} 
+    #wrapper.toggled #sidebar-wrapper img.logo{display: none !important;}
+}
+
+@media (max-width: 767px) { 
+    #sidebar-wrapper {
+        width: 100%;
+        position: relative;
+        float: left;        
+        padding: 50px 25px;
+        background-image: none;
+    }     
+    header{
+        background: @cinza2;
+        padding: 5px 0;
+        
+        ul{margin: 0;}
+    }
+    section{padding: 5% !important;}
+}
